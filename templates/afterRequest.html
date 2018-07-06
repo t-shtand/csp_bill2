@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <title>Python Flask Bucket List App</title>
+   
+       <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+   <link rel="stylesheet" href="/static/mycss.css" type="text/css" > 
+  <!--- <script type="text/javascript">
+    $(function()
+{
+  $('#myform').submit(function(){
+    $("input[type='submit']", this)
+      .val("Please Wait...")
+      .attr('disabled', 'disabled');
+    return true;
+  });
+});
+  </script> -->
+  </head>
+
+  <body >
+   <!-- <h1>Microsoft csp bill {{variab}}</h1> -->
+    <div class="container">
+        <div class="header">
+          
+            <h2 >Microsoft CSP Partner Billing System</h2>
+        </div>
+ 
+        <div class="jumbotron">
+        <h3 style="text-align: left;">Click on download button and wait while Bill is being processed. </h3>
+
+        <!--<p> <b> Your account Id is :</b>  {{PaccountId}}</p>
+        <p> <b>Your app Id is :</b> {{PappId}}</p>
+         <p> Your app Secret is : {{PappSecret}}</p> -->
+        <form id="myform" method="POST" action="/download" class="form-signin" >
+       
+        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="submit" onClick="this.form.submit(); this.disabled=true; this.text='Please wait for 2 minutes!'; " >Download Bill
+        </button>
+      </form>
+        </div>
+ 
+        <footer class="footer">
+            <p>&copy; Microsoft 2018</p>
+        </footer>
+ 
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <title>Microsoft CSP Billing Platform</title>
+   
+       <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+   <link rel="stylesheet" href="/static/mycss.css" type="text/css" > 
+  
+  </head>
+
+  <body >
+   <!-- <h1>Microsoft csp bill {{variab}}</h1> -->
+    <div class="container" >
+        <div style="margin-bottom: 5px">
+           <!-- <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a>
+                    </li>
+                    <li role="presentation"><a href="#">Sign In</a>
+                    </li>
+                    <li role="presentation"><a href="showSignUp">Sign Up</a>
+                    </li>
+                </ul>
+            </nav> -->
+            <img src="/static/images/logo_ms.png" alt="" style="width:160px;height:50px;margin: 0px"> 
+            <p class="p1">CSP Partner Billing System</p>
+        </div>
+ 
+        <div class="classForForm" >
+        <h3>Please Enter Your CSP Partner Credentials</h3>
+        <form method="POST" action="/send" class="form-signin">
+
+        <div class="form-group ">
+        <label class="labels" for="accountId">Account ID : </label>
+        <input type="name" name="accountId" id="accountId" class="formNew" placeholder="Account ID" required autofocus>
+        </div>
+        <div class="form-group ">
+        <label class="labels" for="appId">App ID : </label>
+        <input type="name" name="appId" id="appId" class="formNew" placeholder="App ID" required autofocus>
+    	</div>
+    	<div class="form-group ">
+        <label class="labels" for="appSecret" >App secret : </label>
+        <input type="password" name="appSecret" id="appSecret" class="formNew" placeholder="App secret" required>
+         </div>
+         <div class="form-group">
+        	<label class="labels" for="startDate">Start Date : </label>
+        	<input type="date" name="startDate" id="startDate" class="formNew" required>
+        </div>
+        <div class="form-group">
+        	<label class="labels" for="endDate">End Date : </label>
+        	<input type="date" name="endDate" id="endDate" class="formNew" required>
+        </div>
+        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block mybtn" type="submit">Submit</button>
+      </form>
+        </div>
+
+ 
+        
+ 
+        <footer class="footer">
+            <p>&copy; Microsoft 2018</p>
+        </footer>
+ 
+    </div>
+  </body>
+</html>
