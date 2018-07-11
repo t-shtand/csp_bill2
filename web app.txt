@@ -1,0 +1,25 @@
+shivamtandon11
+CSPbillingst11
+
+az appservice list-locations --sku FREE
+
+az group create --name CspBilling --location "South India"
+output - /subscriptions/fd91b2ed-4041-483f-a82c-f4b39f8c7c90/resourceGroups/CspBilling"
+
+"appServicePlanName": "appCspBilling",
+  "geoRegion": "South India",
+  "hostingEnvironmentProfile": null,
+  "id": "/subscriptions/fd91b2ed-4041-483f-a82c-f4b39f8c7c90/resourceGroups/CspBilling/providers/Microsoft.Web/serverfarms/appCspBilling",
+  "isSpot": false,
+  "kind": "app",
+  "location": "South India",
+  "maximumNumberOfWorkers": 1,
+  "name": "appCspBilling",
+  "numberOfSites": 0,
+  "perSiteScaling": fal
+
+"defaultHostName": "cspbilling18.azurewebsites.net",
+  "deploymentLocalGitUrl": "https://shivamtandon11@cspbilling18.scm.azurewebsites.net/cspBilling18.git",
+
+
+az webapp create --resource-group CspBilling --plan testcsp123 --name  --runtime "python|3.4" --deployment-local-git
